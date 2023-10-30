@@ -12,7 +12,8 @@
         private async void btnDisplayName_Clicked(object sender, EventArgs e)
         {
             string name = entName.Text;
-            await DisplayAlert("Your Name", name, "Nice to meet you!");
+            //await DisplayAlert("Your Name", name, "Nice to meet you!");
+            editorDisplay.Text = name;
         }
 
         //private void OnCounterClicked(object sender, EventArgs e)

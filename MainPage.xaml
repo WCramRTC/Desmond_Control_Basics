@@ -9,6 +9,8 @@
             Padding="30,0"
             VerticalOptions="Center">
 
+            <!--HI MANJULA!!!!-->
+            
             <Label 
                 Text="This is a message"
                 SemanticProperties.Description="A Label displaying the message This is a Message"
@@ -24,6 +26,11 @@
                 x:Name="btnDisplayName"
                 Clicked="btnDisplayName_Clicked"
                 SemanticProperties.Description="A button, when clicked, will display a popup box on screen displaying the name you typed in."
+                />
+
+            <Editor
+                x:Name="editorDisplay"
+                Text="Test Text"
                 />
 
             <!--<Image
