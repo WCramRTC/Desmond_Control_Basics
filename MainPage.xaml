@@ -9,7 +9,24 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
+            <Label 
+                Text="This is a message"
+                SemanticProperties.Description="A Label displaying the message This is a Message"
+                />
+
+            <Entry
+                x:Name="entName"
+                Placeholder="Enter your name"
+                SemanticProperties.Description="A text box for you to enter your name"
+                />
+            <Button
+                Text="Click To Display Name"
+                x:Name="btnDisplayName"
+                Clicked="btnDisplayName_Clicked"
+                SemanticProperties.Description="A button, when clicked, will display a popup box on screen displaying the name you typed in."
+                />
+
+            <!--<Image
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
@@ -34,6 +51,13 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
+
+            <Button 
+                x:Name="btnSecondPage"
+                Text="Go To NExt Page"
+                Clicked="btnSecondPage_Clicked"
+                HorizontalOptions="CenterAndExpand"
+                />-->
 
         </VerticalStackLayout>
     </ScrollView>
